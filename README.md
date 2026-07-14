@@ -36,4 +36,4 @@ and what drives cancellations and customer satisfaction.
 Python (Pandas, NumPy, Matplotlib, Seaborn) — Jupyter Notebook
 
 ## Dashboard Preview
-<Figure size 1800x1200 with 5 Axes><img width="1784" height="1184" alt="image" src="https://github.com/user-attachments/assets/6d353848-59b0-4fe8-8f85-3e3b0fc557ec" />
+<Figure size 1800x1200 with 5 Axes><img width="1784" height="1184" alt="image" src="https://github.com/user-attachments/assets/dc1b4f66-0db1-441f-b9b7-f7a94006972f" />
