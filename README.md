@@ -1,33 +1,39 @@
-# EV Lead-to-Delivery Funnel Analysis & Dashboard
+# EV Lead-to-Delivery Funnel Analysis
 
 ## Business Problem
-ElectricPe operates Mobility Centres connecting customers to EV 2-wheeler brands. 
-This project analyzes the full lead lifecycle — from lead capture to delivery — 
-to identify where conversions stall and where store-level performance diverges.
+EV retail stores manage leads through a multi-stage funnel — Lead → Pre-Booking → 
+Booking → Delivery — with follow-up service after. This project analyzes that 
+funnel across stores to find where conversions stall, which stages cause delays, 
+and what drives cancellations and customer satisfaction.
 
-## What I Analyzed
-- Conversion rates at each funnel stage: Lead → Pre-Booking → Booking → Delivery
-- Average Turnaround Time (TAT) per stage, broken down by store
-- Cancellation patterns by store and reason
-- Hot/Warm/Cold lead distribution and what separates high-potential leads
-- Store-level NPS and its relationship to conversion
+## What I Did
+- Cleaned and structured lead-level data across multiple stores, tracking dates 
+  across each funnel stage
+- Calculated store-wise conversion rates and turnaround time (TAT) per stage 
+  (Pre-Booking, Booking, Delivery)
+- Analyzed cancellation patterns by reason and store
+- Segmented leads by Hot/Warm/Cold and compared distribution across stores
+- Analyzed customer rating distribution post-delivery
+- Built a 5-panel visualization dashboard (funnel, TAT, cancellations, lead 
+  distribution, ratings) using Matplotlib & Seaborn
 
-## Dashboard
-<Figure size 1800x1200 with 5 Axes><img width="1784" height="1184" alt="image" src="https://github.com/user-attachments/assets/6d353848-59b0-4fe8-8f85-3e3b0fc557ec" />
-
-Interactive Excel dashboard covering funnel visualization, TAT performance, 
-cancellation trends, lead temperature distribution, and customer ratings — 
-built for store managers and leadership to act on directly.
-
-## Key Insight
-- Conversion rates are consistently high (~80–82%) across all stores, indicating strong and stable funnel performance.
-- The Book-to-Delivery stage has the highest TAT, making it the primary operational bottleneck.
-- Lead quality distribution (Hot/Warm/Cold) is similar across stores, meaning performance differences are driven by execution, not lead sourcing.
+## Key Insights
+- Conversion rates were consistently strong (~80–82%) across all stores
+- Book-to-Delivery was the biggest bottleneck — highest TAT of any stage
+- Lead quality mix was similar across stores, meaning performance gaps came 
+  from execution, not lead sourcing
+- Financing issues, pricing concerns, and model unavailability were the top 
+  cancellation drivers
 
 ## Recommendations
-- Prioritize follow-ups on Hot/Warm leads using CRM reminders
-- Streamline delivery logistics and coordination
-- Standardize customer handling processes across stores
+- Prioritize Hot/Warm lead follow-ups via CRM reminders; train staff on 
+  objection handling
+- Set internal SLAs per funnel stage to reduce delivery TAT
+- Partner with more financing providers and improve upfront pricing communication
+- Standardize post-delivery feedback collection across stores
 
 ## Tools
-Excel (Power Query, PivotTables, dashboarding)
+Python (Pandas, NumPy, Matplotlib, Seaborn) — Jupyter Notebook
+
+## Dashboard Preview
+<Figure size 1800x1200 with 5 Axes><img width="1784" height="1184" alt="image" src="https://github.com/user-attachments/assets/6d353848-59b0-4fe8-8f85-3e3b0fc557ec" />
